@@ -1,0 +1,6 @@
+diff -ruN original updated 
+diff -ruN original updated > patchfile.patch 
+
+cp -r original original-backup
+patch -d original-backup/  < patchfile.patch
+
