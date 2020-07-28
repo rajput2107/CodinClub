@@ -29,7 +29,7 @@ case ${val} in
         feet=`echo $meter | awk '{print$1/0.3048}'`
         echo $meter" Meter = "$feet" Feet"
         ;;
-	5)
+	*)
 	echo "Please choose from 1 to 4"
 	;;
 esac

@@ -8,26 +8,26 @@ echo $num1 $num2 $num3
 
 if [ $num1 -lt $num2 ] && [ $num1 -lt $num3 ]
 then
-        echo "Num1 is Smallest"
+        echo $num1" is Smallest"
 
 elif [ $num2 -lt $num3 ]
 then
-        echo "Num2 is Smallest"
+        echo $num2" is Smallest"
 else
-        echo "Num3 is Smallest"
+        echo $num3" is Smallest"
 fi
 
 echo "and"
 
 if [ $num1 -gt $num2 ] && [ $num1 -gt $num3 ]
 then
-        echo "Num1 is Greatest"
+        echo $num1" is Greatest"
 
 elif [ $num2 -gt $num3 ]
 then
-        echo "Num2 is Greatest"
+        echo $num2" is Greatest"
 else
-        echo "Num3 is Greatest"
+        echo $num3" is Greatest"
 fi
 
 

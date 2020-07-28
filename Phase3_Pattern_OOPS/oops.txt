@@ -1,0 +1,15 @@
+Static finals are created at compile time.
+Objects are created at runtime.
+
+Method overloading Compile time
+Method Overriding Runtime.
+
+Strings are immutable bcz we can't change value of string at the location it has assigned.
+string s='xyz' the memory assigned is immutuable
+but we can
+s='abc'
+
+Why java is passed by value.
+
+Person{name,mob}
+adrs{addperson,del}

@@ -1,20 +1,13 @@
 #! /bin/bash
 
-arr=( 0 -1 2 -3 1 )
-
-size=0
-
-#Find Array Size
-for counter in ${arr[@]}
-do
-	(( size++ ))
-done
+arr=( 0 -1 2 -3 1 -3 )
 
 
 function findTriplets(){
 	found=1
 	newArr=($@)
 	IFS=$'\n'
+	size=${#newArr[@]}
 	sortedArr=($(sort -g <<<"${newArr[*]}"))
 	unset IFS
 

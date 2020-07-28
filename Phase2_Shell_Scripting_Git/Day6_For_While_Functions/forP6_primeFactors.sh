@@ -2,13 +2,16 @@
 
 read -p "Enter the number: " number
 echo "Prime Factors of "$number " are: "
+
 while [ $(( $number%2 )) -eq 0 ]
 do
 	echo "2"
 	number=$(( $number/2 ))
 done
 
-for (( counter=3; $counter*$counter<=$number; counter=$(( $counter+2 )) ))
+
+for (( counter=3; $counter*$counter<=$number; counter=$(( $counter+2 )) 
+))
 do
 	while [ $(( $number%$counter )) -eq 0 ]
 	do
